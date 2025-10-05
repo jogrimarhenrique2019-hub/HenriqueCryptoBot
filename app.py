@@ -3,9 +3,9 @@ import os, json, time, threading, hmac, hashlib, urllib.request, urllib.parse
 from flask import Flask, request, jsonify
 
 # ====== Config por variáveis de ambiente ======
-TOKEN = os.getenv("TELEGRAM_TOKEN", "")
-BINANCE_KEY = os.getenv("BINANCE_KEY", "")
-BINANCE_SECRET = os.getenv("BINANCE_SECRET", "")
+TOKEN = os.getenv("TELEGRAM_TOKEN", "8288020109:AAESQoa9_dywewZClnMklyQZH1u2a2BjPvM")
+BINANCE_KEY = os.getenv("BINANCE_KEY", "b3kuDAaHYRF88O9x0srvYz2w5TB5H0ERckYyYuQDHqQaU31M0XWfNiMobkADvO15")
+BINANCE_SECRET = os.getenv("BINANCE_SECRET", "psRsWaleusRZKXlGhDRtvQ4MITwbpOm1zYu0GNwMQuQwPsoSJKQdSzwR6HFVE310")
 TESTNET = os.getenv("TESTNET", "true").lower() == "true"
 LIVE = os.getenv("LIVE", "false").lower() == "true"
 
@@ -161,3 +161,4 @@ def webhook():
     text = msg.get("text","")
     if chat_id and text: handle(chat_id, text)
     return jsonify(ok=True)
+
