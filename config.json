@@ -1,0 +1,7 @@
+{
+  "telegram_token": "8288020109:AAESQoa9_dywewZClnMklyQZH1u2a2BjPvM",
+  "binance_key": "b3kuDAaHYRF88O9x0srvYz2w5TB5H0ERckYyYuQDHqQaU31M0XWfNiMobkADvO15",
+  "binance_secret": "psRsWaleusRZKXlGhDRtvQ4MITwbpOm1zYu0GNwMQuQwPsoSJKQdSzwR6HFVE310",
+  "TESTNET": true,
+  "LIVE": false
+}
